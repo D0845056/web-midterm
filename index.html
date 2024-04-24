@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Click to Vote</title>
+        <meta name="description" content="Click the image to vote for your favorite photos">
+    </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        align-items: center;
+    }
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        align-items: center;
+        background: lightblue;
+    }
+
+    .column img {
+        position: relative;
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        cursor: pointer;
+        background: lightblue;
+    }
+    .clickCount{
+        position: relative;
+        left: 50%;
+        bottom: 0px;
+        background: lightblue;
+    }
+
+
+
+    @media (max-width: 800px) {
+        .column {
+            flex: 33%;
+            max-width: 33%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+<body>
+
+<div class="header">
+    <h1>Responsive Image Grid</h1>
+    <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="imgs/photo-1.jpg" style="width:100%" ><p class="clickCount">0</p>
+        <img src="imgs/photo-2.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-3.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-4.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-5.jpg" style="width:100%"><p class="clickCount">0</p>
+    </div>
+    <div class="column">
+        <img src="imgs/photo-8.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-9.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-10.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-11.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-12.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-13.jpg" style="width:100%"><p class="clickCount">0</p>
+    </div>
+    <div class="column">
+        <img src="imgs/photo-1.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-2.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-3.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-4.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-5.jpg" style="width:100%"><p class="clickCount">0</p>
+    </div>
+    <div class="column">
+        <img src="imgs/photo-8.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-9.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-10.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-11.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-12.jpg" style="width:100%"><p class="clickCount">0</p>
+        <img src="imgs/photo-13.jpg" style="width:100%"><p class="clickCount">0</p>
+    </div>
+</div>
+</body>
+</html>
